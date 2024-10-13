@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trendify - Inventario</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>TrendNest</h1>
+            <p>Bienvenido a TrendNest: tu destino digital para las últimas tendencias. Descubre herramientas innovadoras, <br>
+               cursos creativos y productos diseñados para elevar tu experiencia. Únete a nuestra comunidad y transforma  <br>  
+               tu mundo digital con lo mejor que ofrecemos. ¡Explora y crea sin límites!</p>
+        </header>
+
+        <main>
+            <section class="product-section">
+                <h2>Productos</h2>
+                <div class="product-list">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Título</th>
+                                <th>Descripción</th>
+                                <th>Tags</th>
+                                <th>Categoría</th>
+                                <th>Fecha de Lanzamiento</th>
+                                <th>Precio</th>
+                                <th>Formato de Archivo</th>
+                                <th>Tamaño de Archivo</th>
+                                <th>Descargas</th>
+                                <th>Acciones</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                           
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="add-product">
+                    <h2 id="H2">Agregar Nuevo Producto</h2>
+                    <form id="productForm">
+                        <label for="shortName">Título corto:</label>
+                        <input type="text" id="shortName" name="shortName" required>
+
+                        <label for="title">Título:</label>
+                        <input type="text" id="title" name="title" required>
+
+                        <label for="description">Descripción:</label>
+                        <textarea id="description" name="description" required></textarea>
+
+                        <label for="tags">Tags:</label>
+                        <input type="text" id="tags" name="tags" required>
+
+                        <label for="category">Categoría:</label>
+                        <input type="text" id="category" name="category" required>
+
+                        <label for="releaseDate">Fecha de Lanzamiento:</label>
+                        <input type="date" id="releaseDate" name="releaseDate" required>
+
+                        <label for="price">Precio:</label>
+                        <input type="number" id="price" name="price" step="0.01" required>
+
+                        <label for="fileFormat">Formato de Archivo:</label>
+                        <input type="text" id="fileFormat" name="fileFormat" required>
+
+                        <label for="fileSize">Tamaño de Archivo:</label>
+                        <input type="text" id="fileSize" name="fileSize" required>
+
+                        <label for="downloads">Descargas:</label>
+                        <input type="number" id="downloads" name="downloads" required>
+
+                        <button type="submit" id="submitButton">Agregar Producto</button>
+                    </form>
+                </div>
+            </section>
+        </main>
+    </div>
+    <button id="floatingButton" class="add-button">Añadir Artículo</button>
+    <script type="module" src="script.js"></script>
+</body>
+</html>
